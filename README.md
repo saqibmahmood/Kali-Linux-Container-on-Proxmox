@@ -51,11 +51,17 @@ apt-get purge network-manager
 7. Update and Upgrade the Kali Distro: 
 ---------------------------------------------------
 sudo apt-get update && sudo apt-get -y dist-upgrade
+
 sudo reboot now (optional)
+
 sudo apt-cache search kali-linux
+
 sudo apt-get -y install kali-linux-default
+
 sudo apt-get purge network-manager
+
 journ
+
 11. Testing with RDP
 ---------------------------------------------------
 systemctl status xrdp
