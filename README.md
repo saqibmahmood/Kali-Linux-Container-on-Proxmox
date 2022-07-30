@@ -33,19 +33,21 @@ id kali
 8. Enable SSH Server and Login Using "kali" user (via Putty)
 ---------------------------------------------------
 nano /etc/ssh/sshd_config
+
 PermitRootLogin yes (optional)
 
 systemctl enable ssh && systemctl start ssh
+
 systemctl status ssh
-sudo
-11. Testing with SSH
----------------------------------------------------
 
 9. Setting up RDP with Kali Base XFCE
 ---------------------------------------------------
 apt-get update
+
 apt-get dist-upgrade -y
+
 apt-get install -y kali-desktop-xfce xorg xrdp firefox-esr
+
 apt-get purge network-manager
 
 7. Update and Upgrade the Kali Distro: 
@@ -65,13 +67,17 @@ journ
 11. Testing with RDP
 ---------------------------------------------------
 systemctl status xrdp
+
 systemctl enable xrdp && systemctl start xrdp
+
 systemctl status xrdp
 
 10. TightVNCServer Configuration
 ---------------------------------------------------
 sudo apt-get install tightvncserver
+
 tightvncserver -geometry 1280x1024 -depth 16 -pixelformat rgb565/rgb888
+
 nano /etc/tightvncserver.conf
 
 12. Testing with VNC
